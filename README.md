@@ -89,6 +89,6 @@ Example Client's side code on C#:
 # References
 
 Project using The plugin uses the modified `AssemblyCSharp.dll` library, and `ModLoader.dll`.
-The libraries located in libs/ folder.
-`All libraries from the libs/ directory must be placed in the Unturned_Data/Managed directory. Otherwise, the plugin will not work.`
+The libraries located in lib/ folder.
+`All libraries from the lib/ directory must be placed in the Unturned_Data/Managed directory. Otherwise, the plugin will not work.`
 
