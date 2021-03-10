@@ -3,9 +3,8 @@ multifunctional plugin - API that allows you to create your own add-on plugins t
 
 # RCON Side
 This plugin using your RCON addons and any client can invoke them over TCP / IP.
-RCON addons can be made using the UnturnedNetworkAPI.dll library by adding your command to the general list of commands.
 RCON processes each tcp / ip client asynchronously.
-You can set up cooldown to use commands for the regular player.
+RCON addons can be made using the UnturnedNetworkAPI.dll library by adding your command to the general list of commands.
 Example:
 ```
   using UnturnedNetworkAPI.NetworkRCON;
@@ -19,7 +18,7 @@ Example:
   }
 ```
 You need to add your addons to the UnturnedNetworkAPI/Addons/ Folder.
-
+You can set up cooldown to use commands for the regular player.
 You can interact with the RCON network client through the CommandsClient class.
 
 # Basic RCON Commands - Addon
