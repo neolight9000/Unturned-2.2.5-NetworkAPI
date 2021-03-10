@@ -1,10 +1,10 @@
 # Unturned-2.2.5-NetworkAPI
-multifunctional plugin - API that allows you to create your own add-on plugins to interact through RCON. The plugin also has a built-in NetworkChat, with which you can chat over TCP / IP.
+multifunctional plugin - API that allows you to create your own add-on plugins to interact through RCON. The plugin also has a built-in NetworkChat, with which you can chat over TCP/IP.
 
 # RCON Side
 This plugin using your RCON addons and any client can invoke them over TCP / IP.
-RCON processes each tcp / ip client asynchronously.
-RCON addons can be made using the UnturnedNetworkAPI.dll library by adding your command to the general list of commands.
+RCON processes each tcp/ip client asynchronously.
+RCON addons can be made using the `UnturnedNetworkAPI.dll` library by adding your command to the general list of commands.
 Example:
 ```csharp
   using UnturnedNetworkAPI.NetworkRCON;
@@ -17,7 +17,7 @@ Example:
 			args.sender.SendBytes(serverbuffer);
   }
 ```
-You need to add your addons to the UnturnedNetworkAPI/Addons/ Folder.
+You need to add your addons to the `UnturnedNetworkAPI/Addons/` Folder.
 You can set up cooldown to use commands for the regular player.
 You can interact with the RCON network client through the CommandsClient class.
 
@@ -26,7 +26,7 @@ We also made our own RCON Addon, which contains all the basic network commands.
 You can download it in our github page.
 
 # NetworkChat
-We also added a built-in Network chat, through which, using TCP / IP Sockets, you can chat with players over TCP / IP.
+We also added a built-in Network chat, through which, using TCP/IP Sockets, you can chat with players over TCP/IP.
 The plugin listens on the port of your choice and processes each connected client asynchronously.
 You can set up cooldown for chat to the regular player.
 
@@ -36,31 +36,31 @@ The plugin has an anti-bruteforce function, with which you can insist the maximu
 # NetworkChat Configurations
 You can configure the network chat in the UnturnedNetworkAPI / chatconfig.ini settings file.
 
-Chat Enabled - true/false  Enable / Disable network chat
+`Chat Enabled` - true/false  Enable / Disable network chat
 
-Chat Port - Port Number  Use TCP port for network chat
+`Chat Port` - Port Number  Use TCP port for network chat
 
-Max Connections - Number  Maximum number of chat connections at one time
+`Max Connections` - Number  Maximum number of chat connections at one time
 
-Secure Password Connection - true/false  Using a password to connect to network chat
+`Secure Password Connection` - true/false  Using a password to connect to network chat
 
-Client Password - Password  Password for a regular chat user (you can leave nothing if Secure Password Connection is false)
+`Client Password` - Password  Password for a regular chat user (you can leave nothing if Secure Password Connection is false)
 
-Chat administrator password (you can leave nothing if Secure Password Connection is false) 
+`Chat administrator password` (you can leave nothing if Secure Password Connection is false) 
 
-Network Chat Cooldown in Seconds - Number  cooldown for regular user's messages
+`Network Chat Cooldown in Seconds` - Number  cooldown for regular user's messages
 
 
 # RCON Configurations
 You can configure the RCON settings in the UnturnedNetworkAPI / chatconfig.ini settings file.
 
-Network Commands Enabled - true/false  Enable / Disable RCON
+`Network Commands Enabled` - true/false  Enable / Disable RCON
 
-Network Commands Port - Port Number  Use TCP port for RCON
+`Network Commands Port` - Port Number  Use TCP port for RCON
 
-Network Commands Max Connections - Number  Maximum number of RCON connections at one time
+`Network Commands Max Connections` - Number  Maximum number of RCON connections at one time
 
-Network Commands in Seconds - Number  cooldown in seconds for regular user's command
+`Network Commands in Seconds` - Number  cooldown in seconds for regular user's command
 
 
 # Security Settings
