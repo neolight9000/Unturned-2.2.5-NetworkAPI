@@ -37,13 +37,13 @@ The plugin has an anti-bruteforce function, with which you can insist the maximu
 # NetworkChat Configurations
 You can configure the network chat in the UnturnedNetworkAPI / chatconfig.ini settings file.
 
-Chat Enabled - true/false  Enable / Disable network chat
-Chat Port - Port Number  Use TCP port for network chat
-Max Connections - Number  Maximum number of chat connections at one time
-Secure Password Connection - true/false  Using a password to connect to network chat
-Client Password - Password  Password for a regular chat user (you can leave nothing if Secure Password Connection is false)
-Chat administrator password (you can leave nothing if Secure Password Connection is false)
-Network Chat Cooldown in Seconds - Number  cooldown for regular user's messages
+Chat Enabled - true/false  Enable / Disable network chat \n
+Chat Port - Port Number  Use TCP port for network chat \n
+Max Connections - Number  Maximum number of chat connections at one time \n
+Secure Password Connection - true/false  Using a password to connect to network chat \n
+Client Password - Password  Password for a regular chat user (you can leave nothing if Secure Password Connection is false) \n
+Chat administrator password (you can leave nothing if Secure Password Connection is false) \n
+Network Chat Cooldown in Seconds - Number  cooldown for regular user's messages \n
 
 # RCON Configurations
 You can configure the RCON settings in the UnturnedNetworkAPI / chatconfig.ini settings file.
