@@ -16,7 +16,7 @@ Example:
 			byte[] serverbuffer = Encoding.UTF8.GetBytes("Hello, World!"); // You send "Hello, World" Message to network client-caller.
 			args.sender.SendBytes(serverbuffer);
   }
-```csharp
+```
 You need to add your addons to the UnturnedNetworkAPI/Addons/ Folder.
 You can set up cooldown to use commands for the regular player.
 You can interact with the RCON network client through the CommandsClient class.
@@ -69,5 +69,5 @@ Example Client's side code on C#:
 			byte[] buffer = new byte[RCONClient.Client.ReceiveBufferSize];
 			RCONClient.Client.Receive(buffer);
 			Console.WriteLine($"Server's answer: {Encoding.UTF8.GetString(buffer)}");
-```csharp
+```
   
