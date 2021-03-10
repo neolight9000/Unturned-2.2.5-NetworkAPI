@@ -68,9 +68,13 @@ You can change max. failed attempts per day in file UnturnedNetworkAPI / setting
 
 # How to write client's side code for the RCON
 RCON using Socket TCP/IP. You must use this type of connection to work with RCON.
+
 RCON accepts special data packets separated by '|'. Example: |commandname|argument1|argument2|.
+
 RCON Works with UTF-8 encoding, you need to encode your data-packages with this, Example: Encoding.UTF8.GetBytes("|commandname|argument1|argument2|");
+
 When connecting to RCON, the first thing you need to do is log in by sending the "|login|password|" packet. (Use UTF-8 encoding)
+
 Example Client's side code on C#:
 ```csharp
       TcpClient RCONClient = new TcpClient("127.0.0.1", 4300);
@@ -82,3 +86,9 @@ Example Client's side code on C#:
 			Console.WriteLine($"Server's answer: {Encoding.UTF8.GetString(buffer)}");
 ```
   
+# References
+
+Project using The plugin uses the modified `AssemblyCSharp.dll` library, and `ModLoader.dll`.
+The libraries located in libs/ folder.
+`All libraries from the libs/ directory must be placed in the Unturned_Data/Managed directory. Otherwise, the plugin will not work.`
+
