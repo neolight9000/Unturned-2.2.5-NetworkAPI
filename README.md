@@ -6,7 +6,7 @@ This plugin using your RCON addons and any client can invoke them over TCP / IP.
 RCON processes each tcp / ip client asynchronously.
 RCON addons can be made using the UnturnedNetworkAPI.dll library by adding your command to the general list of commands.
 Example:
-```
+```csharp
   using UnturnedNetworkAPI.NetworkRCON;
   
   NetworkCommandsList.add(new NetworkCommand(8, new NetworkCommandDelegate(SayHello), new string[] { "hello", "hellowrld" })); // adding your command to the static  Commands List.
@@ -16,7 +16,7 @@ Example:
 			byte[] serverbuffer = Encoding.UTF8.GetBytes("Hello, World!"); // You send "Hello, World" Message to network client-caller.
 			args.sender.SendBytes(serverbuffer);
   }
-```
+csharp```
 You need to add your addons to the UnturnedNetworkAPI/Addons/ Folder.
 You can set up cooldown to use commands for the regular player.
 You can interact with the RCON network client through the CommandsClient class.
@@ -61,7 +61,7 @@ RCON accepts special data packets separated by '|'. Example: |commandname|argume
 RCON Works with UTF-8 encoding, you need to encode your data-packages with this, Example: Encoding.UTF8.GetBytes("|commandname|argument1|argument2|");
 When connecting to RCON, the first thing you need to do is log in by sending the "|login|password|" packet. (Use UTF-8 encoding)
 Example Client's side code on C#:
-```
+```csharp
       TcpClient RCONClient = new TcpClient("127.0.0.1", 4300);
 			string login = "neolight";
 			string password = "12245234fwasr";
@@ -69,5 +69,5 @@ Example Client's side code on C#:
 			byte[] buffer = new byte[RCONClient.Client.ReceiveBufferSize];
 			RCONClient.Client.Receive(buffer);
 			Console.WriteLine($"Server's answer: {Encoding.UTF8.GetString(buffer)}");
-```
+csharp```
   
