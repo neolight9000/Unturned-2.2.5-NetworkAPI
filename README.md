@@ -23,7 +23,7 @@ You can interact with the RCON network client through the CommandsClient class.
 
 # Basic RCON Commands - Addon
 We also made our own RCON Addon, which contains all the basic network commands.
-You can download it in our github page.
+You can download it in our [github page](https://github.com/neolight9000/Unturned-2.2.5-Basic-NetworkCommands-Addon).
 
 # NetworkChat
 We also added a built-in Network chat, through which, using TCP/IP Sockets, you can chat with players over TCP/IP.
